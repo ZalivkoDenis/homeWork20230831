@@ -1,25 +1,27 @@
 create database if not exists its_proj;
 
-create table if not exists Project (
+drop table if exists project;
+create table if not exists project (
+   id int primary key auto_increment,
    name varchar(64),
    date_start varchar(10),
    manager_name varchar(32)
 );
-
-delete from Project where true;
 
 insert into Project (name, date_start, manager_name)
 VALUES
     ('ProjectIT','03/05/2023','Alexandr S.'),
     ('ProjectOwn','18/05/2023','Denis Z.');
 
-create table if not exists Company (
+drop table if exists company;
+create table if not exists company (
+    id int primary key auto_increment,
     name varchar(64),
     age integer,
     email varchar(64)
 );
 
-delete from Company where true;
+# delete from Company where true;
 
 insert into Company (name, age, email)
 VALUES
