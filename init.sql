@@ -1,9 +1,9 @@
 create database if not exists its_proj;
 
 create table if not exists Project (
-                                       name varchar(64),
-                                       date_start varchar(10),
-                                       manager_name varchar(32)
+   name varchar(64),
+   date_start varchar(10),
+   manager_name varchar(32)
 );
 
 delete from Project where true;
@@ -14,9 +14,9 @@ VALUES
     ('ProjectOwn','18/05/2023','Denis Z.');
 
 create table if not exists Company (
-                                       name varchar(64),
-                                       age integer,
-                                       email varchar(64)
+    name varchar(64),
+    age integer,
+    email varchar(64)
 );
 
 delete from Company where true;
