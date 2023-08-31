@@ -8,7 +8,7 @@ create table if not exists project (
    manager_name varchar(32)
 );
 
-insert into Project (name, date_start, manager_name)
+insert into project (name, date_start, manager_name)
 VALUES
     ('ProjectIT','03/05/2023','Alexandr S.'),
     ('ProjectOwn','18/05/2023','Denis Z.');
@@ -23,7 +23,7 @@ create table if not exists company (
 
 # delete from Company where true;
 
-insert into Company (name, age, email)
+insert into company (name, age, email)
 VALUES
     ('IT-Step', NULL, 'vitebsk.by@itstep.org'),
     ('Рога и копыта', 99, 'horns-n-hoofs@faraway.club'),
